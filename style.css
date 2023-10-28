@@ -27,6 +27,91 @@ body {
   color: #f4eded;
 
 }
+.titulo-anuncios {
+  text-align: center;
+}
+
+.contenedor-anuncios {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor-anuncios a {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.anuncio {
+  display: inline-block;
+  width: 30rem;
+  border: solid #b5b5b5 1px;
+  background: #f5f5f5;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all .4s;
+}
+
+.anuncio-especial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 177px;
+}
+
+.anuncio:hover {
+  transform: scale(1.1);
+  transition: all .4s;
+}
+
+.contenedor-img {
+  width: 100%;
+  height: 20rem;
+}
+
+.contenedor-img img {
+  height: 100%;
+}
+
+.precio {
+  color: #71b100;
+  font-weight: 700;
+}
+
+.contenedor-boton-anuncio {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.boton-anuncio {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  margin-top: 1.5rem;
+  text-align: center;
+  border: none;
+  background-color: black;
+  border-radius: 20px;
+  width: 20rem;
+  margin: 0 auto;
+  margin-right: 5rem;
+}
+
+.boton-anuncio:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.none {
+  display: none;
+}
+
 
 .contacto{
   max-width: 100%;
@@ -41,6 +126,25 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contenedor-img img {
+    height: 100%;
+}
+img {
+    max-width: 100%;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 
@@ -93,7 +197,9 @@ nav a {
 h1 {
   text-align: center;
 }
-
+h3 {
+  color: #000000;
+}
 .auto {
   border: 1px solid #070101;
   padding: 20px;
@@ -127,7 +233,32 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #0056b3;
 }
+.contenedor-nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 1.3;
+}
 
+.nosotros-icono {
+  width: 10rem;
+  margin: 1rem 0;
+}
+
+.mapa {
+  margin: 4rem auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-mapa {
+  width: 25rem;
+}
 
 @media screen and (max-width: 600px) {
   body {
